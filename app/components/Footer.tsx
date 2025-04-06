@@ -225,17 +225,7 @@ export default function OrderForm() {
                 required
               />
             </div>
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={formData.payOnline}
-                onChange={(e) =>
-                  setFormData({ ...formData, payOnline: e.target.checked })
-                }
-                className="w-4 h-4"
-              />
-              <span>Pay Online</span>
-            </label>
+            
           </div>
 
           {/* Submit Button */}

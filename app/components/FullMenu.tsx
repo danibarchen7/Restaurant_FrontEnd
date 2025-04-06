@@ -37,7 +37,7 @@ const MenuPage = () => {
           <div key={item.id} className="bg-white p-4 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
             <h2 className="text-xl font-bold text-black">{item.name}</h2>
             <p className="text-700 text-black">{item.description}</p>
-            <p className="text-black font-semibold">${item.price}</p>
+            <p className="text-black font-semibold">€{item.price}</p>
             <img src={item.image_url} alt={item.name} className="w-full max-h-96 mt-4 rounded-md" />
             <Link href="#order" legacyBehavior>
           <a className="inline-block">
