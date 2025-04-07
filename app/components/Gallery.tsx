@@ -34,7 +34,7 @@ export default function Gallery() {
           {[...Array(12)].map((_, i) => (
             <Image
               key={i}
-              src={`/image/dish${i + 1}.jpg`}
+              src={`/image/Dish${i + 1}.jpg`}
               alt={`Dish ${i + 1}`}
               width={300} // Adjust width & height based on your layout
               height={300}
