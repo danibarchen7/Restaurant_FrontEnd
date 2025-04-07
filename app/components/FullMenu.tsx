@@ -1,8 +1,9 @@
-// pages/menu.tsx
+// // pages/menu.tsx
 "use client";
+import Image from "next/image";
+
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import Image from "next/image";
 
 interface MenuItem {
   id: number;
@@ -38,20 +39,24 @@ const MenuPage = () => {
           <div key={item.id} className="bg-white p-4 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
             <h2 className="text-xl font-bold text-black">{item.name}</h2>
             <p className="text-700 text-black">{item.description}</p>
-            <p className="text-black font-semibold">€{item.price}</p>
-            <Image
+            <p className="text-black font-semibold">${item.price}</p>
+            {/* <img src={item.image_url} alt={item.name} className="w-full max-h-96 mt-4 rounded-md" /> */}
+            <div className="relative w-full h-56">
+              <Image
                 src={item.image_url || "/placeholder.jpg"}
                 alt={item.name}
                 fill
-                className="object-cover rounded-md"
-                unoptimized={true} // Remove this if you want to enable optimization.
+                className="object-cover"
               />
-            <Link href="#order" className="inline-block">
+            </div>
+
+
+          
+          <Link href="#order" className="inline-block">
               <button className="bg-black text-yellow px-6 py-3 text-lg font-semibold hover:bg-gray-800 transition-colors">
                 order
               </button>
             </Link>
-
 
           </div>
         ))}

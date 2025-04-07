@@ -280,7 +280,7 @@ export default function OrderForm() {
                 Menu
               </a> */}
               <Link href="/menu">
-                Home
+                Menu
               </Link>
             </li>
             <li>
@@ -288,7 +288,7 @@ export default function OrderForm() {
                 Contact Us
               </a> */}
               <Link href="#contact">
-                Home
+                Contact
               </Link>
             </li>
           </ul>
