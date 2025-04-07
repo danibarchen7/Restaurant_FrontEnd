@@ -1,9 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  allowedDevOrigins: ["http://127.0.0.1:3000", "http://localhost:3000","http://127.0.0.1:8000", "http://localhost:8000","https://restaurant-ieuk.onrender.com"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "restaurant-ieuk.onrender.com",
+        pathname: "/**", // Allows all images from the domain
+      },
+    ],
+  },
+  allowedDevOrigins: ["http://127.0.0.1:3000", "http://localhost:3000","http://127.0.0.1:8000", "http://localhost:8000","https://restaurant-ieuk.onrender.com","https://restaurant-ieuk.onrender.com/media/"],
 };
+  /* config options here */
 
 export default nextConfig;
 // import type { NextConfig } from "next";
