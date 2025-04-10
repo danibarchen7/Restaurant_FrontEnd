@@ -34,7 +34,7 @@ export default function OrderForm() {
   useEffect(() => {
     const fetchMenuItems = async () => {
       try {
-        const response = await fetch("https://restaurant-ieuk.onrender.com/Menu/Resturant/menu-items/");
+        const response = await fetch("https://zum.pythonanywhere.com/Menu/Resturant/menu-items/");
         if (!response.ok) throw new Error("Failed to load menu");
         const data = await response.json();
         setMenuItems(data);
@@ -81,7 +81,7 @@ export default function OrderForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://restaurant-ieuk.onrender.com/api/send-email/", {
+      const response = await fetch("https://zum.pythonanywhere.com/api/send-email/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

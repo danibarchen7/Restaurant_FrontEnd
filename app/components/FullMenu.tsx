@@ -19,7 +19,7 @@ const MenuPage = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await fetch('https://restaurant-ieuk.onrender.com/Menu/Resturant/menu/');
+        const res = await fetch('https://zum.pythonanywhere.com/Menu/Resturant/menu/');
         if (!res.ok) throw new Error('Failed to fetch data');
         const data = await res.json();
         setMenuItems(data);
