@@ -53,8 +53,8 @@ const MenuPage = () => {
 
           
           <Link href="#order" className="inline-block">
-              <button className="bg-black text-yellow px-6 py-3 text-lg font-semibold hover:bg-gray-800 transition-colors">
-                order
+              <button className="bg-black text-white px-6 py-3 text-lg font-semibold hover:bg-gray-800 transition-colors">
+              Befehl
               </button>
             </Link>
 

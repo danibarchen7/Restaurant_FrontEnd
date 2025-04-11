@@ -11,17 +11,17 @@ export default function Header() {
         <ul className="flex space-x-4">
           <li>
             <Link href="/#hero" className="hover:text-yellow-300">
-              Home
+            Heim
             </Link>
           </li>
           <li>
             <Link href="/menu" passHref  className="hover:text-yellow-300">
-              Menu
+            Speisekarte
             </Link>
           </li>
           <li>
             <Link href="#contact"className="hover:text-yellow-300">
-             Contact
+            Kontakt
             </Link>
           </li>
         </ul>

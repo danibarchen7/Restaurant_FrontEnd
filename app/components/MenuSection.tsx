@@ -28,7 +28,7 @@ export default function MenuSection() {
           <Link href="/menu" passHref legacyBehavior>
   <a className="inline-block">
     <button className="bg-black text-yellow-400 px-12 py-5 text-lg font-semibold hover:opacity-90 transition-opacity">
-      Check out Full Menu
+    Schauen Sie sich das vollständige Menü an
     </button>
   </a>
 </Link>
